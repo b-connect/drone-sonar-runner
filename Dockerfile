@@ -15,4 +15,4 @@ RUN apk update && \
 WORKDIR /
 ADD runner.sh runner.sh
 RUN chmod +x runner.sh
-ENTRYPOINT ['runner.sh']
+ENTRYPOINT ['/runner.sh']
