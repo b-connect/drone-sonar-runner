@@ -13,6 +13,6 @@ RUN apk update && \
   rm -rf /var/cache/apk/*
 
 
-ADD runner.sh runner.sh
-RUN chmod +x runner.sh
+ADD runner.sh /opt/sonar/runner.sh
+RUN chmod +x /opt/sonar/runner.sh
 ENTRYPOINT ['/opt/sonar/runner.sh']
