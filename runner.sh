@@ -11,4 +11,4 @@ if [ -z "$PLUGIN_SONAR_KEY" ]; then
     exit 0
 fi
 
-java -jar runner.jar -Dsonar.host.url=$PLUGIN_SONAR_HOST -Dsonar.sources=$PLUGIN_SONAR_SOURCE -Dsonar.projectKey=$PLUGIN_SONAR_KEY
+java -jar /opt/sonar/runner.jar -Dsonar.host.url=$PLUGIN_SONAR_HOST -Dsonar.sources=$PLUGIN_SONAR_SOURCE -Dsonar.projectKey=$PLUGIN_SONAR_KEY
