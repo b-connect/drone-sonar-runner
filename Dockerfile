@@ -12,7 +12,7 @@ RUN apk update && \
     ca-certificates && \
   rm -rf /var/cache/apk/*
 
+WORKDIR /
 ADD runner.sh runner.sh
 RUN chmod +x runner.sh
-
 ENTRYPOINT ['runner.sh']
