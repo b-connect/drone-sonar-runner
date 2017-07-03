@@ -15,4 +15,4 @@ RUN apk update && \
 
 ADD runner.sh /opt/sonar/runner.sh
 RUN chmod +x /opt/sonar/runner.sh
-ENTRYPOINT ['bin/sh', '/opt/sonar/runner.sh']
+ENTRYPOINT ["/opt/sonar/runner.sh"]
